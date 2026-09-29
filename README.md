@@ -1,4 +1,4 @@
-# 🗺️ Airport Gap REST API Testing Project - Postman
+# Airport Gap REST API Testing Project - Postman
 
 ## Descripción
 Proyecto de **API Testing Manual** enfocado en el aseguramiento de la calidad (QA) sobre el backend de la plataforma **Airport Gap**. El objetivo fue auditar la lógica de negocio del servidor mediante solicitudes HTTP, verificando la gestión de recursos públicos y privados, validaciones de esquemas de datos y resiliencia del backend ante fallos simulados.
