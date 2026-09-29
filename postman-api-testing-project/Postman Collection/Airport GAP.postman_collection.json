@@ -1,0 +1,831 @@
+{
+  "info": {
+    "_postman_id": "f4aa2979-cada-4c6a-a870-94cb6982b8f0",
+    "name": "Airport GAP",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "50919938",
+    "_collection_link": "https://go.postman.co/collection/50919938-f4aa2979-cada-4c6a-a870-94cb6982b8f0?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "TC-001",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Token <Your Airport Gap Token>"
+          }
+        ],
+        "url": {
+          "raw": "https://airportgap.com/api/airports",
+          "protocol": "https",
+          "host": [
+            "airportgap",
+            "com"
+          ],
+          "path": [
+            "api",
+            "airports"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TC-002",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Token <Your Airport Gap Token>"
+          }
+        ],
+        "url": {
+          "raw": "https://airportgap.com/api/airports/JFK",
+          "protocol": "https",
+          "host": [
+            "airportgap",
+            "com"
+          ],
+          "path": [
+            "api",
+            "airports",
+            "JFK"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TC-003",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "from",
+              "value": "KIX"
+            },
+            {
+              "type": "text",
+              "key": "to",
+              "value": "NRT"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://airportgap.com/api/airports/distance",
+          "protocol": "https",
+          "host": [
+            "airportgap",
+            "com"
+          ],
+          "path": [
+            "api",
+            "airports",
+            "distance"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TC-004",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "email",
+              "value": "enri124589@gmail.com",
+              "type": "text",
+              "uuid": "1d99ea74-ef9b-4c37-8237-71c42cbb186d"
+            },
+            {
+              "key": "password",
+              "value": "enriquesuica",
+              "type": "text",
+              "uuid": "1e339a13-2ff0-44f0-bba2-10d2f6a6bfc4"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://airportgap.com/api/tokens",
+          "protocol": "https",
+          "host": [
+            "airportgap",
+            "com"
+          ],
+          "path": [
+            "api",
+            "tokens"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TC-005",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "email",
+              "value": ""
+            },
+            {
+              "type": "text",
+              "key": "password",
+              "value": ""
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://airportgap.com/api/tokens",
+          "protocol": "https",
+          "host": [
+            "airportgap",
+            "com"
+          ],
+          "path": [
+            "api",
+            "tokens"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TC-006",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer token=qgSXz8qYnt3NTBbRUqsQKKJb",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "airport_id",
+              "value": "GKA",
+              "type": "text",
+              "uuid": "80a4b86f-59c8-4be6-830b-e7db703497ed"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://airportgap.com/api/favorites",
+          "protocol": "https",
+          "host": [
+            "airportgap",
+            "com"
+          ],
+          "path": [
+            "api",
+            "favorites"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TC-007",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer token=qgSXz8qYnt3NTBbRUqsQKKJb",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "airport_id",
+              "value": "JFK",
+              "type": "text",
+              "uuid": "80a4b86f-59c8-4be6-830b-e7db703497ed"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://airportgap.com/api/favorites",
+          "protocol": "https",
+          "host": [
+            "airportgap",
+            "com"
+          ],
+          "path": [
+            "api",
+            "favorites"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TC-008",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer token=qgSXz8qYnt3NTBbRUqsQKKJb",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "airport_id",
+              "value": "",
+              "type": "text",
+              "uuid": "80a4b86f-59c8-4be6-830b-e7db703497ed"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://airportgap.com/api/favorites",
+          "protocol": "https",
+          "host": [
+            "airportgap",
+            "com"
+          ],
+          "path": [
+            "api",
+            "favorites"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TC-009",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer token=qgSXz8qYnt3NTBbRUqsQKKJb",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "airport_id",
+              "value": "JFK",
+              "type": "text",
+              "uuid": "80a4b86f-59c8-4be6-830b-e7db703497ed"
+            },
+            {
+              "key": "note",
+              "value": "Escala viaje de negocios",
+              "type": "text",
+              "uuid": "8997ca43-e8b5-42a5-ad49-bbe3f05e0ba8"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://airportgap.com/api/favorites/49167",
+          "protocol": "https",
+          "host": [
+            "airportgap",
+            "com"
+          ],
+          "path": [
+            "api",
+            "favorites",
+            "49167"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TC-010",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer token=qgSXz8qYnt3NTBbRUqsQKKJb",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "airport_id",
+              "value": "JFK",
+              "type": "text",
+              "uuid": "80a4b86f-59c8-4be6-830b-e7db703497ed"
+            },
+            {
+              "key": "note",
+              "value": "Prueba sin permisos",
+              "type": "text",
+              "uuid": "8997ca43-e8b5-42a5-ad49-bbe3f05e0ba8"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://airportgap.com/api/favorites/49165",
+          "protocol": "https",
+          "host": [
+            "airportgap",
+            "com"
+          ],
+          "path": [
+            "api",
+            "favorites",
+            "49165"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TC-011",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer token=qgSXz8qYnt3NTBbRUqsQKKJb",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "airport_id",
+              "value": "JFK",
+              "type": "text",
+              "uuid": "80a4b86f-59c8-4be6-830b-e7db703497ed"
+            },
+            {
+              "key": "note",
+              "value": "Texto de prueba",
+              "type": "text",
+              "uuid": "8997ca43-e8b5-42a5-ad49-bbe3f05e0ba8"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://airportgap.com/api/favorites/1",
+          "protocol": "https",
+          "host": [
+            "airportgap",
+            "com"
+          ],
+          "path": [
+            "api",
+            "favorites",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TC-012",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer token=qgSXz8qYnt3NTBbRUqsQKKJb",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "airport_id",
+              "value": "JFK",
+              "type": "text",
+              "uuid": "80a4b86f-59c8-4be6-830b-e7db703497ed",
+              "disabled": true
+            },
+            {
+              "key": "note",
+              "value": "Texto de prueba",
+              "type": "text",
+              "uuid": "8997ca43-e8b5-42a5-ad49-bbe3f05e0ba8",
+              "disabled": true
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://airportgap.com/api/favorites/49167",
+          "protocol": "https",
+          "host": [
+            "airportgap",
+            "com"
+          ],
+          "path": [
+            "api",
+            "favorites",
+            "49167"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TC-013",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer token=qgSXz8qYnt3NTBbRUqsQKKJb",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "airport_id",
+              "value": "JFK",
+              "type": "text",
+              "uuid": "80a4b86f-59c8-4be6-830b-e7db703497ed",
+              "disabled": true
+            },
+            {
+              "key": "note",
+              "value": "Texto de prueba",
+              "type": "text",
+              "uuid": "8997ca43-e8b5-42a5-ad49-bbe3f05e0ba8",
+              "disabled": true
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://airportgap.com/api/favorites/49165",
+          "protocol": "https",
+          "host": [
+            "airportgap",
+            "com"
+          ],
+          "path": [
+            "api",
+            "favorites",
+            "49165"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TC-014",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer token=qgSXz8qYnt3NTBbRUqsQKKJb",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "airport_id",
+              "value": "JFK",
+              "type": "text",
+              "uuid": "80a4b86f-59c8-4be6-830b-e7db703497ed",
+              "disabled": true
+            },
+            {
+              "key": "note",
+              "value": "Texto de prueba",
+              "type": "text",
+              "uuid": "8997ca43-e8b5-42a5-ad49-bbe3f05e0ba8",
+              "disabled": true
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://airportgap.com/api/favorites/clear_all",
+          "protocol": "https",
+          "host": [
+            "airportgap",
+            "com"
+          ],
+          "path": [
+            "api",
+            "favorites",
+            "clear_all"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TC-015",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer token=qgSXz8qYnt3NTBbRUqsQKKJb",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://airportgap.com/api/airports",
+          "protocol": "https",
+          "host": [
+            "airportgap",
+            "com"
+          ],
+          "path": [
+            "api",
+            "airports"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TC-016",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer token=qgSXz8qYnt3NTBbRUqsQKKJb",
+            "type": "text",
+            "disabled": true
+          },
+          {
+            "key": "X-Simulate",
+            "value": "server-error",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "https://airportgap.com/api/airports",
+          "protocol": "https",
+          "host": [
+            "airportgap",
+            "com"
+          ],
+          "path": [
+            "api",
+            "airports"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TC-017",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer token=qgSXz8qYnt3NTBbRUqsQKKJb",
+            "type": "text",
+            "disabled": true
+          },
+          {
+            "key": "X-Simulate",
+            "value": "malformed-json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "https://airportgap.com/api/airports",
+          "protocol": "https",
+          "host": [
+            "airportgap",
+            "com"
+          ],
+          "path": [
+            "api",
+            "airports"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TC-018",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer token=qgSXz8qYnt3NTBbRUqsQKKJb",
+            "type": "text",
+            "disabled": true
+          },
+          {
+            "key": "X-Simulate",
+            "value": "malformed-json",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": []
+        },
+        "url": {
+          "raw": "https://airportgap.com/api/airports",
+          "protocol": "https",
+          "host": [
+            "airportgap",
+            "com"
+          ],
+          "path": [
+            "api",
+            "airports"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TC-019",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer token=qgSXz8qYnt3NTBbRUqsQKKJb",
+            "type": "text",
+            "disabled": true
+          },
+          {
+            "key": "X-Simulate",
+            "value": "malformed-json",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": []
+        },
+        "url": {
+          "raw": "https://airportgap.com/api/favorites/1",
+          "protocol": "https",
+          "host": [
+            "airportgap",
+            "com"
+          ],
+          "path": [
+            "api",
+            "favorites",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TC-020",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer token=qgSXz8qYnt3NTBbRUqsQKKJb",
+            "type": "text",
+            "disabled": true
+          },
+          {
+            "key": "X-Simulate",
+            "value": "malformed-json",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": []
+        },
+        "url": {
+          "raw": "https://airportgap.com/api/airports",
+          "protocol": "https",
+          "host": [
+            "airportgap",
+            "com"
+          ],
+          "path": [
+            "api",
+            "airports"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
